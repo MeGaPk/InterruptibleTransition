@@ -22,6 +22,8 @@
 		13D2981B22D1FD4F005A7F06 /* ChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D2981A22D1FD4F005A7F06 /* ChildViewController.swift */; };
 		13D2981D22D1FD71005A7F06 /* InstantPanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D2981C22D1FD71005A7F06 /* InstantPanGestureRecognizer.swift */; };
 		13D2982222D204C2005A7F06 /* DimmPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D2982122D204C2005A7F06 /* DimmPresentationController.swift */; };
+		4CC71118243B200900A5CD0A /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC71116243B1FF200A5CD0A /* MessageUI.framework */; };
+		4CC7111C243B201700A5CD0A /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC7111B243B201700A5CD0A /* Messages.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		13D2981A22D1FD4F005A7F06 /* ChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildViewController.swift; sourceTree = "<group>"; };
 		13D2981C22D1FD71005A7F06 /* InstantPanGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstantPanGestureRecognizer.swift; sourceTree = "<group>"; };
 		13D2982122D204C2005A7F06 /* DimmPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DimmPresentationController.swift; sourceTree = "<group>"; };
+		4CC71116243B1FF200A5CD0A /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		4CC7111B243B201700A5CD0A /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +53,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CC7111C243B201700A5CD0A /* Messages.framework in Frameworks */,
+				4CC71118243B200900A5CD0A /* MessageUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +66,7 @@
 			children = (
 				130F235C22C69AB700A9A7D6 /* FluidTransition */,
 				130F235B22C69AB700A9A7D6 /* Products */,
+				4CC71115243B1FF200A5CD0A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,6 +131,15 @@
 				13D2982122D204C2005A7F06 /* DimmPresentationController.swift */,
 			);
 			path = "Presentation controller";
+			sourceTree = "<group>";
+		};
+		4CC71115243B1FF200A5CD0A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4CC7111B243B201700A5CD0A /* Messages.framework */,
+				4CC71116243B1FF200A5CD0A /* MessageUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -355,13 +371,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = P67Q4Q7HA9;
+				DEVELOPMENT_TEAM = 639F2A946H;
 				INFOPLIST_FILE = FluidTransition/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.akaDuality.FluidTransition;
+				PRODUCT_BUNDLE_IDENTIFIER = toster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -373,13 +389,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = P67Q4Q7HA9;
+				DEVELOPMENT_TEAM = 639F2A946H;
 				INFOPLIST_FILE = FluidTransition/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.akaDuality.FluidTransition;
+				PRODUCT_BUNDLE_IDENTIFIER = toster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
